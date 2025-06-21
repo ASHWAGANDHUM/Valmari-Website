@@ -211,7 +211,6 @@ a:hover {
 .product {
   position: relative;
   max-width: 360px;
-  padding-bottom: 91px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   background-color: rgb(255, 255, 255);
 }
@@ -376,4 +375,85 @@ a:hover {
 .product__button-det_teal:hover {
   background-color: rgb(0, 168, 150);
   color: rgb(255, 255, 255);
+}
+
+.radio-box {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.radio-box__dot {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  background-color: rgb(183, 236, 177);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.radio-box__dot:checked {
+  background-color: rgb(85, 166, 48);
+}
+
+.about {
+  margin-top: 175px;
+  margin-bottom: 177px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 121px;
+}
+.about__info {
+  max-width: 452px;
+  position: relative;
+}
+.about__title {
+  color: rgb(133, 133, 133);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+.about__head {
+  color: rgb(85, 166, 48);
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 107%;
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+.about__head-decode {
+  color: rgb(66, 66, 66);
+  color: rgb(66, 66, 66);
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 107%;
+  letter-spacing: -0.4px;
+  text-align: left;
+  padding-bottom: 75px;
+}
+.about__desc {
+  color: rgb(66, 66, 66);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: left;
+}
+.about__desc_first {
+  padding-bottom: 1em;
+}
+.about__det-box {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 48px;
+  position: absolute;
+  bottom: 0px;
+  left: 194px;
+}
+.about__det-text {
+  color: rgb(85, 166, 48);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 28px;
 }/*# sourceMappingURL=style.css.map */

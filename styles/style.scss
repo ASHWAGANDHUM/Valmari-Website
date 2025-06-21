@@ -204,7 +204,6 @@ a:hover {
 .product {
     position: relative;
     max-width: 360px;
-    padding-bottom: 91px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     background-color: $color-white;
     &__logo {
@@ -368,5 +367,82 @@ a:hover {
                 color: $color-white;
             }
         }
+    }
+}
+.radio-box {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    &__dot {
+        appearance: none;
+        border-radius: 50%;
+        background-color: $color-disable;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+            &:checked {
+            background-color: $color-base;
+        }
+    }
+}
+.about {
+    margin-top: 175px;
+    margin-bottom: 177px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 121px;
+    &__info {
+        max-width: 452px;
+        position: relative;
+    }
+    &__title {
+        color: rgb(133, 133, 133);
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 28px;
+        padding-bottom: 30px;
+    }
+    &__head {
+        color: $color-base;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 107%;
+        letter-spacing: -0.4px;
+        text-align: left;
+    }
+    &__head-decode {
+        color: $color-text;
+        color: rgb(66, 66, 66);
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 107%;
+        letter-spacing: -0.4px;
+        text-align: left;
+        padding-bottom: 75px;
+    }
+    &__desc {
+        color: $color-text;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+        &_first {
+            padding-bottom: 1em;
+        }
+    }
+    &__det-box {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 48px;
+        position: absolute;
+        bottom: 0px;
+        left: 194px;
+    }
+    &__det-text {
+        color: $color-base;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 28px;
     }
 }
