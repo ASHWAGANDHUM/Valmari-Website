@@ -1,0 +1,372 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: underline;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.button {
+    font: inherit;
+    cursor: pointer;
+}
+.top {
+
+}
+.header {
+    padding-top: 12px;
+    padding-bottom: 9px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(85, 166, 48, 0.5);
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 66px;
+        align-items: center;
+    }
+    &__phone {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 22px;
+        align-items: center;
+    }
+    &__phone-number {
+        color: $color-text;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    &__icon-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 26px;
+    }
+    &__flag-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+}
+.nav {
+    &__list {
+    list-style-type: none;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-bottom: 19px;
+    }
+}
+.background {
+    background-color: rgb(236, 255, 235);
+}
+.content {
+    padding-top: 71px;
+    padding-bottom: 138px;
+    background: url(../images/specialists.png) bottom 0px right -24px no-repeat;
+    &__heading {
+        padding-bottom: 4px;
+        color: $color-text;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    &__title {
+        padding-bottom: 20px;
+        color: rgb(85, 166, 48);
+        font-size: 65px;
+        font-weight: 700;
+        line-height: 65px;
+    }
+    &__desc {
+        padding-bottom: 57px;
+        max-width: 420px;
+        color: $color-text;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    &__button-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__button-reg {
+        background-color: rgb(85, 166, 48);
+        color: $color-white;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(85, 166, 48);
+        padding: 19px 39px;
+        transition: 1s;
+        &:hover {
+            background-color: transparent;
+            color: rgb(85, 166, 48);
+        }
+    }
+    &__button-det {
+        background-color: transparent;
+        box-sizing: border-box;
+        border: 1px solid rgb(85, 166, 48);
+        color: rgb(85, 166, 48);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        padding: 22px 58px;
+        transition: 1s;
+        &:hover {
+            background-color: rgb(85, 166, 48);
+            color: $color-white;
+        }
+    }
+}
+.main {
+    background: url(../images/lines.svg) top 24px right -24px no-repeat;
+}
+.stat {
+    margin-top: -24px;
+    &__item-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px 55px;
+        border-radius: 4px;
+        box-shadow: -2px 2px 20px 0px rgba(66, 66, 66, 0.15);
+        background-color: $color-white;
+    }
+    &__numbers {
+        color: $color-base;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: center;
+        padding-bottom: 18px;
+    }
+    &__text {
+        color: $color-text;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+    }
+}
+.back-lines {
+    position: absolute;
+    top: 730px;
+    right: -25px;
+    z-index: -1;
+}
+.product-box {
+    margin-top: 175px;
+    &__title {
+        color: $color-text;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: center;
+        padding-bottom: 77px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.product {
+    position: relative;
+    max-width: 360px;
+    padding-bottom: 91px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    background-color: $color-white;
+    &__logo {
+        position: absolute;
+        top: 16px;
+        right: 14px;
+    }
+    &__bust {
+        position: absolute;
+        top: 214px;
+        right: 14px;
+    }
+    &__desc {
+        padding-left: 16px;
+        padding-top: 16px;
+    }
+    &__title {
+        color: $color-text;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+    &__name {
+        color: $color-purple;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.4px;
+        text-align: left;
+        margin-bottom: 23px;
+        &_green {
+            color: $color-base;
+        }
+        &_teal {
+            color: $color-teal;
+        }
+    }
+    &__type {
+        box-sizing: border-box;
+        width: 166px;
+        height: 39px;
+        padding-top: 8px;
+        border-radius: 9px;
+        background-color: $color-purple;
+        color: $color-white;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 24px;
+        &_green {
+            background-color: $color-base;
+        }
+        &_teal {
+            background-color: $color-teal;
+        }
+    }
+    &__period {
+        color: $color-text;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        margin-bottom: 47px;
+    }
+    &__list {
+        margin-left: 4px;
+        padding: 7px 9px;
+        margin-bottom: 60px;
+        box-sizing: border-box;
+        border-left: 2px solid $color-purple;
+        list-style-type: none;
+        color: $color-text;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 12px;
+        text-align: left;
+        height: 103px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_green {
+            border-color: $color-base;
+        }
+        &_teal {
+            border-color: $color-teal;
+        }
+    }
+    &__place {
+        color: $color-text;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    &__button-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__button-reg {
+        border: none;
+        box-sizing: border-box;
+        background-color: $color-purple;
+        padding: 16px 68px;
+        color: $color-white;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        transition: 1s;
+        &:hover {
+            background-color: rgba(83, 81, 196, 0.1);
+            color: $color-purple;
+        }
+        &_green {
+            background-color: $color-base;
+            &:hover {
+                background-color: rgba(83, 81, 196, 0.1);
+                color: $color-base;
+            }
+        }
+        &_teal {
+            background-color: $color-teal;
+            &:hover {
+                background-color: rgba(83, 81, 196, 0.1);
+                color: $color-teal;
+            }
+        }
+    }
+    &__button-det {
+        border: none;
+        box-sizing: border-box;
+        background-color:rgba(83, 81, 196, 0.1);
+        padding: 16px;
+        color: $color-purple;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        transition: 1s;
+        &:hover {
+            background-color: $color-purple;
+            color: $color-white;
+        }
+        &_green {
+            color: $color-base;
+            &:hover {
+                background-color: $color-base;
+                color: $color-white;
+            }
+        }
+        &_teal {
+            color: $color-teal;
+            &:hover {
+                background-color: $color-teal;
+                color: $color-white;
+            }
+        }
+    }
+}
