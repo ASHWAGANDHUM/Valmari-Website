@@ -203,8 +203,7 @@ a:hover {
 }
 .product-box__content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 

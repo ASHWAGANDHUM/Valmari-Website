@@ -22,9 +22,6 @@ a:hover {
     font: inherit;
     cursor: pointer;
 }
-.top {
-
-}
 .header {
     padding-top: 12px;
     padding-bottom: 9px;
@@ -196,8 +193,7 @@ a:hover {
     }
     &__content {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row nowrap;
         justify-content: space-between;
     }
 }
